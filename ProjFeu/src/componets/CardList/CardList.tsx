@@ -1,7 +1,10 @@
 // COMPONENTE REUTILIZÁVEL PARA MOSTRAR LISTAS EM CARDS
-
 // Declara a fx que irá renderizar o conteúdo no site
-export default function CardList ({ children }) { 
+import type { ReactNode } from "react";
+type CardListProps = {
+  children: ReactNode;
+};
+export default function CardList({ children }: CardListProps) {
     return (
     // cards container  
     <div className="tab-content"> {/* css class */}

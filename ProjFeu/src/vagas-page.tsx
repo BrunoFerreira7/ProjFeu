@@ -1,8 +1,6 @@
-// Import React use state
-import { useState } from 'react'
 
 // Import componente 'Vaga'para poder criar o Array 'jobs' com suas propriedades
-import Vaga from './Vaga'
+import Vaga from './componets/Vagas/Vaga'
 
 // External style --- ATUALIZAR o CSS para agregar as bibliotecas animate e owlcarousel
 import './css/style.css'

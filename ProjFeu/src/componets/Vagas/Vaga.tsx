@@ -1,12 +1,21 @@
 // COMPONENTE PARA LISTAR AS VAGAS
-
 // Importa a fx. 'CardList'
-import CardList from "./CardList";
-
+import CardList from "../CardList/CardList";
+type VagaProps = {
+  titulo: string;
+  descricao: string;
+  requisitos: string;
+  tipo: string;
+};
 // Declara a fx. 'Vaga' que recebe como argumentos os detalhes do vag e retorna esses detalhes dentro do container 'CardList'
-export default function Vaga({ titulo, descricao, requisitos, tipo }) {
+export default function Vaga({
+  titulo,
+  descricao,
+  requisitos,
+  tipo,
+}: VagaProps) {
   return (
-    <CardList> {/* o 'CardList' é o prop que usa os argumentos da fx 'Vaga' como children */}
+      <CardList> {/* o 'CardList' é o prop que usa os argumentos da fx 'Vaga' como children */}
       <h3>{titulo}</h3>
       <p><strong><i className="fas fa-info-circle text-dark me-2"></i>Descrição da vaga:</strong> {descricao}</p>
       <p><strong><i className="fas fa-check-circle text-dark me-2"></i>Requisitos:</strong> {requisitos}</p>
