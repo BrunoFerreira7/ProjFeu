@@ -36,7 +36,7 @@ const newsItems = [
   },
   {
     id: 4,
-    title: "Nexus Games na Brasil Game Show 2025",
+    title: "FEU Games Studio na Brasil Game Show 2025",
     date: "28 Dez 2025",
     category: "Evento",
     excerpt:
