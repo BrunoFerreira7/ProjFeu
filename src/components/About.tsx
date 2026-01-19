@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"; // react animation library
 // import { Target, Heart, Zap, Globe } from "lucide-react"; //react icon library
 import { Button } from "../components/ui/button"; // custom component
-import  aboutBg from "../assets/intro_banner2.png"; // background banner
+import  aboutBg from "../assets/decor-banner1.png"; // background banner
 import teamImg from "../assets/team.jpg"; // team profile pic
 
 const About = () => {
@@ -25,8 +25,8 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.35 }}
           >
             <span className="inline-block px-4 py-2 rounded-full bg-blue-600/20 text-blue-400 border border-blue-600/30 text-sm font-medium mb-6">
               Sobre nós
@@ -53,13 +53,15 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.35 }}
             className="w-full"
           >
             <img
               src={teamImg}
               alt="team"
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-md h-auto rounded-2xl"
            />
           </motion.div>

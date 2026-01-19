@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"; // react library for animations
 import { ChevronDown} from "lucide-react"; // react icons library
-import introBg from "../assets/gaming_video3.mp4"; // banner file
+import introBg from "../assets/intro_video.mp4"; // banner file
 
 const Intro = () => {
   return (

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Mail, Twitter, Instagram, Youtube, Twitch } from "lucide-react";
 import { Button } from "../components/ui/button";
-import ctaBg from "../assets/fundo_da_pagina.png";
+import ctaBg from "../assets/footer-bkg.png";
 import characterPng from "../assets/game-char.png";
 import logo from "../assets/logo-doug.png"; // logo
 
@@ -95,7 +95,7 @@ const Footer = () => {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:bg-blue-600 hover:text-blue-100 transition-colors"
+                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:bg-blue-800 hover:text-blue-100 transition-colors"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>

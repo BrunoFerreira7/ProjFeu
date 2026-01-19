@@ -5,14 +5,16 @@ import { motion, AnimatePresence } from "framer-motion"; // react library for an
 import { Menu, X} from "lucide-react"; // react icon library - for Mobile menu
 import { Button } from "./ui/button"; // custom component
 import logo from "../assets/logo-doug.png"; // logo
+//import { href } from "react-router-dom";
 
 // var to store site menu (array)
 const navLinks = [
   { name: "Início", href: "/", isRoute: true }, //Homepage - href -> "/" for back to the root page (homepage)
-  { name: "Jogos", href: "#games", isRoute: false }, // Jogos page - href -> anchor (#games) *replace later with actual page path /jogos
-  { name: "Sobre Nós", href: "/sobre-nos", isRoute: true }, // Sobre nós page
-  { name: "Novidades", href: "/novidades", isRoute: true }, // Novidades page
-  { name: "Trabalhe Conosco", href: "/trabalhe-conosco", isRoute: true }, // Trabalhe conosco page
+  { name: "Jogos", href: "/emconstrucao", isRoute: false }, // Jogos page - *replace later with actual page path /jogos
+  { name: "Sobre Nós", href: "/sobre-nos", isRoute: true }, // Sobre nós page (route from App.tsx)
+  { name: "Novidades", href: "/novidades", isRoute: true }, // Novidades page (route from App.tsx)
+  { name: "Trabalhe Conosco", href: "/trabalhe-conosco", isRoute: true }, // Trabalhe conosco page (route from App.tsx)
+  { name: "Contato", href: "#contact", isRoute: false}, // Contato page href -> anchor (#contact from Footer.tsx id)
 ];
 
 /* COMMENTS
