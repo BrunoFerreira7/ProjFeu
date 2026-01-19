@@ -4,11 +4,12 @@ import { Button } from "../components/ui/button";
 import ctaBg from "../assets/footer-bkg.png";
 import characterPng from "../assets/game-char.png";
 import logo from "../assets/logo-doug.png"; // logo
+import { Link } from "react-router-dom";
 
 const socialLinks = [
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Twitter, href: "https://x.com/DougFeu", label: "Twitter" },
   { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Youtube, href: "https://www.youtube.com/@casafeu/", label: "YouTube" },
   { icon: Twitch, href: "#", label: "Twitch" },
 ];
 
@@ -59,12 +60,21 @@ const Footer = () => {
             Estamos sempre abertos a novas ideias e colaborações!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg">
-              <Mail className="w-5 h-5" />
-              Contato
+            <Button variant="hero" size="lg" asChild>
+                <a
+                  href="mailto:contato@feugames.com"
+                  className="text-inherit"
+                >
+                <Mail className="w-5 h-5" />
+                  Contato
+                </a>
             </Button>
-            <Button variant="heroOutline" size="lg">
+            <Button variant="heroOutline" size="lg" asChild>
+              <Link to="/trabalhe-conosco"
+              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "auto" })} /* deixar gambiarra por enquanto */
+              >
               Ver Vagas
+              </Link>
             </Button>
           </div>
         </motion.div>
@@ -76,7 +86,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             {/* Logo - Link with img and text */}
-            <a href="#home" className="flex items-center gap-3 mb-6">
+            <a href="/" className="flex items-center gap-3 mb-6">
               <img
                 src={logo} // load logo file
                 alt="Casa Feu Jogos" // alt text
@@ -87,7 +97,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-muted-foreground text-sm mb-6 text-center">
-              Criando experiências de jogos extraordinárias desde 2020
+              Criando experiências de jogos extraordinárias desde 2023
             </p>
             <div className="flex gap-3 justify-center">
               {socialLinks.map((social) => (
@@ -103,7 +113,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links - FALTA SETUP LINKS */}
           <div>
             <h3 className="font-display font-bold text-lg mb-4">Links Rápidos</h3>
             <ul className="space-y-3 text-muted-foreground">
@@ -135,16 +145,6 @@ const Footer = () => {
           <div>
             <h3 className="font-display font-bold text-lg mb-4">Contato</h3>
             <ul className="space-y-4 text-muted-foreground">
-              {/*
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5" />
-                <span>Av. Paulista, 1234<br />São Paulo, SP - Brasil</span>
-              </li> 
-              <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary" />
-                <span>+55 (11) 99999-9999</span>
-              </li>
-              */}
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-600" />
                 <span>contato@feugames.com</span>

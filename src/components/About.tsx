@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"; // react animation library
-// import { Target, Heart, Zap, Globe } from "lucide-react"; //react icon library
 import { Button } from "../components/ui/button"; // custom component
-import  aboutBg from "../assets/decor-banner1.png"; // background banner
+import  aboutBg from "../assets/about-bkg.png"; // background banner
 import teamImg from "../assets/team.jpg"; // team profile pic
+import { Link } from "react-router-dom"; // to link btns
 
 const About = () => {
   return (
@@ -35,16 +35,18 @@ const About = () => {
               Inovando no Universo Gaming
             </h2>
             <p className="text-muted-foreground text-lg mb-6">
-              Fundada em 2020, a <span className="font-semibold bg-gradient-to-r from-blue-300 via-blue-500 to-blue-800 bg-clip-text text-transparent">FEU GAMES STUDIO</span> nasceu 
-              da união de desenvolvedores apaixonados por criar experiências de jogos memoráveis. 
+              Fundada em 2023, a <span className="font-semibold bg-gradient-to-r from-blue-300 via-blue-500 to-blue-800 bg-clip-text text-transparent">FEU GAMES STUDIO</span> nasceu 
+              da paixão por criar experiências de jogos memoráveis. 
               Nossa missão é transportar jogadores para mundos extraordinários através de histórias 
               envolventes e gameplay inovador.
             </p>
 
             {/* Sobre nós page btn */}
             <div className="flex gap-8">
-             <Button variant="heroOutline" size="xl">
+             <Button variant="heroOutline" size="xl" asChild>
+              <Link to="/sobre-nos#about">
               SAIBA MAIS SOBRE NÓS
+              </Link>
             </Button>
             </div>
           </motion.div>

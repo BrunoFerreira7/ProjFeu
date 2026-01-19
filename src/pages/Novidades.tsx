@@ -3,6 +3,8 @@ import { Calendar, ArrowRight } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { BannerPage } from "../components/BannerPage";
+import bannerBg from "../assets/news-bkg.png";
 
 const newsItems = [
   {
@@ -34,12 +36,12 @@ const newsItems = [
   },
   {
     id: 4,
-    title: "Nexus Games na Brasil Game Show 2024",
-    date: "28 Dez 2023",
+    title: "Nexus Games na Brasil Game Show 2025",
+    date: "28 Dez 2025",
     category: "Evento",
     excerpt:
-      "Estaremos presentes na BGS 2024 com um estande exclusivo. Venha conhecer nossos próximos lançamentos e participar de atividades especiais.",
-    image: "https://images.unsplash.com/photo-1493711662062-fa541f7f5d6d?w=600&q=80",
+      "Estaremos presentes na BGS 2025 com um estande exclusivo. Venha conhecer nossos próximos lançamentos e participar de atividades especiais.",
+    image: "https://images.unsplash.com/photo-1614738499301-d2eed34f7b11?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 5,
@@ -78,7 +80,9 @@ const Novidades = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
-      {/* Hero Section */}
+      <BannerPage title="Novidades" backgroundImg={bannerBg}/>
+
+      {/*Main Section */}
       <section className="pt-32 pb-16 px-4">
         <div className="container mx-auto">
           <motion.div
@@ -87,12 +91,12 @@ const Novidades = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-blue-600/20 text-blue-400 border border-blue-600/30 text-sm font-medium mb-6">
               Blog & Notícias
             </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="text-gradient-primary">Novidades</span> da Nexus
-            </h1>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+              Novidades da FEU
+            </h2>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
               Fique por dentro das últimas notícias, atualizações de jogos, 
               eventos e tudo que acontece no universo Nexus Games.
@@ -128,7 +132,7 @@ const Novidades = () => {
                   {newsItems[0].date}
                 </span>
               </div>
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 hover:text-primary transition-colors cursor-pointer">
+              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 hover:text-blue-700 transition-colors cursor-pointer">
                 {newsItems[0].title}
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -154,7 +158,7 @@ const Novidades = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group rounded-xl bg-surface border border-border overflow-hidden hover:border-primary/50 transition-colors"
+                className="group rounded-xl bg-surface border border-border overflow-hidden hover:border-blue-500 transition-colors"
               >
                 <div className="aspect-video overflow-hidden">
                   <img
@@ -173,7 +177,7 @@ const Novidades = () => {
                       {news.date}
                     </span>
                   </div>
-                  <h3 className="font-display font-bold text-lg mb-2 group-hover:text-primary transition-colors cursor-pointer">
+                  <h3 className="font-display font-bold text-lg mb-2 group-hover:text-blue-700 transition-colors cursor-pointer">
                     {news.title}
                   </h3>
                   <p className="text-muted-foreground text-sm line-clamp-2">

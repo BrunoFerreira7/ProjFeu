@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { Target, Eye, Heart, Users, Award, Zap, Linkedin, Github, Instagram, Twitter, Globe } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import bannerBg from "../assets/decor-banner1.png"; //banner image file
+import bannerBg from "../assets/about-bkg.png"; //banner image file
 import { BannerPage } from "../components/BannerPage";
+import { BannerDecor } from "../components/BannerDecor";
+import bannerDc from "../assets/about-bkg-decor.png";
 import douglasPhoto from "../assets/douglas.jpg";
 import marianaPhoto from "../assets/mariana-lombardo.jpeg";
 import brunoPhoto from "../assets/bruno-ferreira.jpg";
@@ -133,10 +135,10 @@ const SobreNos = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="p-6 rounded-xl bg-surface border border-border hover:border-primary/50 transition-all hover:-translate-y-1"
+                className="p-6 rounded-xl bg-surface border border-border hover:border-blue-500 transition-all hover:-translate-y-1"
               >
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <value.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-lg bg-blue-700 flex items-center justify-center mb-4">
+                  <value.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="font-display font-bold text-lg mb-2">{value.title}</h3>
                 <p className="text-muted-foreground text-sm">{value.description}</p>
@@ -145,6 +147,9 @@ const SobreNos = () => {
           </div>
         </div>
       </section>
+
+      {/* Decorative */}
+      <BannerDecor decorImg={bannerDc}/>
 
       {/* Team Section */}
       <section className="py-16 px-4">
@@ -223,8 +228,8 @@ const SobreNos = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="font-display font-bold text-lg mb-1">{member.name}</h3>
-                <p className="text-blue-600 text-sm font-medium mb-3">{member.role}</p>
+                <h3 className="font-display font-bold text-blue-700 text-lg mb-1">{member.name}</h3>
+                <p className="text-white text-sm font-medium mb-3">{member.role}</p>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{member.bio}</p>
                 <div className="flex justify-center gap-3">
                   {member.linkedin && (
@@ -232,7 +237,7 @@ const SobreNos = () => {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-white hover:bg-blue-800 transition-colors"
+                      className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-white hover:bg-blue-800 transition-colors"
                     >
                       <Linkedin className="w-4 h-4" />
                     </a>
@@ -242,7 +247,7 @@ const SobreNos = () => {
                       href={member.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-white hover:bg-blue-800 transition-colors"
+                      className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-white hover:bg-blue-800 transition-colors"
                     >
                       <Github className="w-4 h-4" />
                     </a>
@@ -252,7 +257,7 @@ const SobreNos = () => {
                       href={member.instagram}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-white hover:bg-blue-800 transition-colors"
+                      className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-white hover:bg-blue-800 transition-colors"
                     >
                       <Instagram className="w-4 h-4" />
                     </a>
@@ -262,7 +267,7 @@ const SobreNos = () => {
                       href={member.twitter}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-white hover:bg-blue-800 transition-colors"
+                      className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-white hover:bg-blue-800 transition-colors"
                     >
                       <Twitter className="w-4 h-4" />
                     </a>
@@ -272,7 +277,7 @@ const SobreNos = () => {
                       href={member.website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-white hover:bg-blue-800 transition-colors"
+                      className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-white hover:bg-blue-800 transition-colors"
                     >
                       <Globe className="w-4 h-4" />
                     </a>

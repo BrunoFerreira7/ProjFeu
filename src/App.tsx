@@ -6,11 +6,13 @@ import SobreNos from "./pages/SobreNos";
 import TrabalheConosco from "./pages/TrabalheConosco";
 import Novidades from "./pages/Novidades";
 import EmConstrucao from "./pages/EmConstrucao";
+import { ScrollToTop } from "./components/ScrollToTop"; // custom component faz scroll pro topo quando modar rota
 
 const App = () => (
     <TooltipProvider>
       <Toaster />
       <BrowserRouter>
+      <ScrollToTop /> 
         <Routes>
           {/* LINKANDO AS PÁGINAS NO HOME */}
           <Route path="/" element={<Index />} /> {/* Homepage */}
