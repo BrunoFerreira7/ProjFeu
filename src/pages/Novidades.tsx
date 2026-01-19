@@ -58,7 +58,7 @@ const newsItems = [
     date: "15 Dez 2023",
     category: "Blog",
     excerpt:
-      "2023 foi um ano incrível para a Nexus Games. Confira os principais marcos e conquistas que alcançamos junto com nossa comunidade.",
+      "2023 foi um ano incrível para a FEU Games Studio. Confira os principais marcos e conquistas que alcançamos junto com nossa comunidade.",
     image: "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=600&q=80",
   },
 ];
@@ -99,7 +99,7 @@ const Novidades = () => {
             </h2>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
               Fique por dentro das últimas notícias, atualizações de jogos, 
-              eventos e tudo que acontece no universo Nexus Games.
+              eventos e tudo que acontece no universo FEU Games Studio.
             </p>
           </motion.div>
         </div>
