@@ -6,9 +6,6 @@ import imagemJogo2 from '../assets/jogo-2.png';
 import Header from "../components/Header";      
 import HeroBanner from '../components/ui/HeroBanner'; // O componente que criamos acima
 
-
-
-
 interface GameData {
   id: number;
   title: string;
