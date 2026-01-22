@@ -47,7 +47,7 @@ const Games = () => {
           </p>
         </motion.div>
         
-        <div className="grid md:grid-cols-2 gap-8 md:gap-x-6 w-fit mx-auto justify-items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-x-6 w-fit mx-auto justify-items-center cursor-pointer">
           {games.map((game, index) => (
             <motion.div
               key={game.title}
@@ -100,7 +100,7 @@ const Games = () => {
                     </div>
                   </div>
 
-                  <Button variant="heroOutline" size="sm" className="w-full">
+                  <Button variant="heroOutline" size="sm" className="w-full cursor-pointer">
                     Saiba Mais
                   </Button>
                 </div>
@@ -116,7 +116,7 @@ const Games = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button variant="hero" size="lg">
+          <Button variant="hero" size="lg" className="cursor-pointer">
             Ver Todos os Jogos
           </Button>
         </motion.div>

@@ -159,8 +159,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>© 2025 FEU Games Studio. Todos os direitos reservados.</p>
           <div className="flex gap-6">
-            <a href="/emconstrucao" className="hover:text-blue-600 transition-colors">Política de Privacidade</a>
-            <a href="/emconstrucao" className="hover:text-blue-600 transition-colors">Termos de Uso</a>
+            <a href="/privacidade" className="hover:text-blue-600 transition-colors">Política de Privacidade</a>
+            <a href="/termosdeuso" className="hover:text-blue-600 transition-colors">Termos de Uso</a>
           </div>
         </div>
       </div>

@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { Target, Eye, Heart, Users, Award, Zap, Linkedin, Github, Instagram, Twitter, Globe } from "lucide-react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import bannerBg from "../assets/about-bkg.png"; //banner image file
 import { BannerPage } from "../components/BannerPage";
 import { BannerDecor } from "../components/BannerDecor";
@@ -37,7 +35,6 @@ const values = [
 const SobreNos = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       
       {/* Background Strip -> usa StripDecor.tsx component */}
       <BannerPage title="Sobre Nós" backgroundImg={bannerBg}/>
@@ -289,7 +286,6 @@ const SobreNos = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

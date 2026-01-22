@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Button } from "../components/ui/button";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { BannerPage } from "../components/BannerPage";
 import bannerBg from "../assets/news-bkg.png";
 
@@ -78,7 +76,6 @@ const getCategoryColor = (category: string) => {
 const Novidades = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
 
       <BannerPage title="Novidades" backgroundImg={bannerBg}/>
 
@@ -204,7 +201,6 @@ const Novidades = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };
