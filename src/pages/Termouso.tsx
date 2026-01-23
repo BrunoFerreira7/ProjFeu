@@ -1,14 +1,11 @@
 const TermoUso = () => {
   return (
     <div className="max-w-3xl mx-auto px-6 py-32 space-y-14">
-
       <header className="space-y-4 text-center">
-        <h1 className="text-4xl font-semibold text-gray-100">
+        <h1 className="text-4xl font-semibold text-gray-100 tracking-wider">
           Política de Privacidade
         </h1>
-        <p className="text-sm">
-          Última atualização: Janeiro de 2026
-        </p>
+        <p className="text-sm">Última atualização: Janeiro de 2026</p>
       </header>
 
       <section className="space-y-5 leading-relaxed">
@@ -24,7 +21,7 @@ const TermoUso = () => {
       </section>
 
       <section className="space-y-5 leading-relaxed">
-        <h2 className="text-2xl text-gray-100">
+        <h2 className="text-2xl text-gray-100 tracking-wider">
           Coleta de Informações
         </h2>
         <p>
@@ -39,7 +36,7 @@ const TermoUso = () => {
       </section>
 
       <section className="space-y-5 leading-relaxed">
-        <h2 className="text-2xl text-gray-100">
+        <h2 className="text-2xl text-gray-100 tracking-wider">
           Uso de Cookies
         </h2>
         <p>
@@ -47,12 +44,13 @@ const TermoUso = () => {
           básico do site ou para análises simples de tráfego.
         </p>
         <p>
-          Nenhum cookie é utilizado para rastreamento invasivo ou venda de dados.
+          Nenhum cookie é utilizado para rastreamento invasivo ou venda de
+          dados.
         </p>
       </section>
 
       <section className="space-y-5 leading-relaxed">
-        <h2 className="text-2xl text-gray-100">
+        <h2 className="text-2xl text-gray-100 tracking-wider">
           Compartilhamento de Dados
         </h2>
         <p>
@@ -62,7 +60,7 @@ const TermoUso = () => {
       </section>
 
       <section className="space-y-5 leading-relaxed">
-        <h2 className="text-2xl text-gray-100">
+        <h2 className="text-2xl text-gray-100 tracking-wider">
           Alterações nesta Política
         </h2>
         <p>
@@ -70,15 +68,8 @@ const TermoUso = () => {
           Recomenda-se a revisão periódica desta página.
         </p>
       </section>
-Name
-      <footer className="pt-16 border-t border-gray-800 text-sm">
-        <p>
-          © 2026 — Desenvolvedor Indie Solo
-        </p>
-      </footer>
-
     </div>
-  )
-}
+  );
+};
 
 export default TermoUso;

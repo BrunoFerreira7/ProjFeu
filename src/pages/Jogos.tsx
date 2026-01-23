@@ -7,7 +7,6 @@ import { FaLink } from "react-icons/fa6";
 const Jogos = () => {
   return (
     <div className="min-h-screen bg-background">
-
       {/* Nova Parte de Cima Inspirada na Referência [1] */}
       <HeroBanner />
 
@@ -41,7 +40,10 @@ const Jogos = () => {
                 </p>
 
                 <p className="text-gray-400 leading-relaxed max-w-md">
-                  Bem vindas crianças, este é o show das suas vidas, sua última maior brincadeira, não prometemos nada menos do que um grande show cheio de diversão e entretenimento... Para alguém pelo menos.
+                  Bem vindas crianças, este é o show das suas vidas, sua última
+                  maior brincadeira, não prometemos nada menos do que um grande
+                  show cheio de diversão e entretenimento... Para alguém pelo
+                  menos.
                 </p>
               </div>
               {/* Botões */}

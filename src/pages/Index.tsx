@@ -9,7 +9,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Intro />
       <Games />
-      <BannerDecor decorImg={BannerDc}/>
+      <BannerDecor decorImg={BannerDc} />
       <About />
     </div>
   );

@@ -47,7 +47,7 @@ const Games = () => {
           </p>
         </motion.div>
         
-        <div className="grid md:grid-cols-2 gap-8 md:gap-x-6 w-fit mx-auto justify-items-center cursor-pointer">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-x-6 w-fit mx-auto justify-items-center">
           {games.map((game, index) => (
             <motion.div
               key={game.title}
@@ -99,10 +99,6 @@ const Games = () => {
                       <span>{game.year}</span>
                     </div>
                   </div>
-
-                  <Button variant="heroOutline" size="sm" className="w-full cursor-pointer">
-                    Saiba Mais
-                  </Button>
                 </div>
               </div>
             </motion.div>

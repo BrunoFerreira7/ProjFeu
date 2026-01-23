@@ -12,7 +12,8 @@ const newsItems = [
     category: "Anúncio",
     excerpt:
       "Após meses de especulação, confirmamos oficialmente o desenvolvimento de Dragon's Fury 2. O jogo promete gráficos revolucionários e uma história ainda mais épica.",
-    image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&q=80",
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ const newsItems = [
     category: "Marco",
     excerpt:
       "Nosso título mais recente alcançou a marca de 5 milhões de jogadores ativos em apenas 3 meses de lançamento. Agradecemos a toda nossa comunidade!",
-    image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=600&q=80",
   },
   {
     id: 3,
@@ -30,7 +32,8 @@ const newsItems = [
     category: "Update",
     excerpt:
       "A atualização de inverno de Neon Velocity traz novas pistas, veículos e um modo de jogo inédito. Disponível agora para todos os jogadores.",
-    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&q=80",
   },
   {
     id: 4,
@@ -39,7 +42,8 @@ const newsItems = [
     category: "Evento",
     excerpt:
       "Estaremos presentes na BGS 2025 com um estande exclusivo. Venha conhecer nossos próximos lançamentos e participar de atividades especiais.",
-    image: "https://images.unsplash.com/photo-1614738499301-d2eed34f7b11?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1614738499301-d2eed34f7b11?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 5,
@@ -48,7 +52,8 @@ const newsItems = [
     category: "Parceria",
     excerpt:
       "Anunciamos uma parceria estratégica com o renomado estúdio Sakura Interactive para o desenvolvimento de um RPG inovador.",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&q=80",
   },
   {
     id: 6,
@@ -57,7 +62,8 @@ const newsItems = [
     category: "Blog",
     excerpt:
       "2023 foi um ano incrível para a FEU Games Studio. Confira os principais marcos e conquistas que alcançamos junto com nossa comunidade.",
-    image: "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=600&q=80",
   },
 ];
 
@@ -76,8 +82,7 @@ const getCategoryColor = (category: string) => {
 const Novidades = () => {
   return (
     <div className="min-h-screen bg-background">
-
-      <BannerPage title="Novidades" backgroundImg={bannerBg}/>
+      <BannerPage title="Novidades" backgroundImg={bannerBg} />
 
       {/*Main Section */}
       <section className="pt-32 pb-16 px-4">
@@ -95,7 +100,7 @@ const Novidades = () => {
               Novidades da FEU
             </h2>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-              Fique por dentro das últimas notícias, atualizações de jogos, 
+              Fique por dentro das últimas notícias, atualizações de jogos,
               eventos e tudo que acontece no universo FEU Games Studio.
             </p>
           </motion.div>
@@ -121,7 +126,9 @@ const Novidades = () => {
             </div>
             <div className="flex flex-col justify-center">
               <div className="flex items-center gap-4 mb-4">
-                <span className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(newsItems[0].category)}`}>
+                <span
+                  className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(newsItems[0].category)}`}
+                >
                   {newsItems[0].category}
                 </span>
                 <span className="text-muted-foreground text-sm flex items-center gap-2">
@@ -166,7 +173,9 @@ const Novidades = () => {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-4 mb-3">
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(news.category)}`}>
+                    <span
+                      className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(news.category)}`}
+                    >
                       {news.category}
                     </span>
                     <span className="text-muted-foreground text-xs flex items-center gap-1">
@@ -200,7 +209,6 @@ const Novidades = () => {
           </motion.div>
         </div>
       </section>
-
     </div>
   );
 };

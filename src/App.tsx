@@ -16,7 +16,7 @@ const App = () => (
   <TooltipProvider>
     <Toaster />
     <BrowserRouter>
-    <Header />
+      <Header />
       <ScrollToTop />
       <Routes>
         {/* LINKANDO AS PÁGINAS NO HOME */}

@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Briefcase, Send, CheckCircle, Users, Rocket, Heart, Coffee } from "lucide-react";
+import {
+  Briefcase,
+  Send,
+  CheckCircle,
+  Users,
+  Rocket,
+  Heart,
+  Coffee,
+} from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
@@ -58,7 +66,7 @@ const TrabalheConosco = () => {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -68,8 +76,7 @@ const TrabalheConosco = () => {
 
   return (
     <div className="min-h-screen bg-background">
-
-      <BannerPage title="Trabalhe Conosco" backgroundImg={bannerDc}/>
+      <BannerPage title="Trabalhe Conosco" backgroundImg={bannerDc} />
 
       {/* main Section */}
       <section className="pt-32 pb-16 px-4">
@@ -87,8 +94,8 @@ const TrabalheConosco = () => {
               Faça parte do universo FEU
             </h2>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-              Junte-se ao nosso time e ajude a criar os jogos do futuro. 
-              Estamos sempre em busca de talentos apaixonados por games!
+              Junte-se ao nosso time e ajude a criar os jogos do futuro. Estamos
+              sempre em busca de talentos apaixonados por games!
             </p>
           </motion.div>
         </div>
@@ -110,8 +117,12 @@ const TrabalheConosco = () => {
                 <div className="w-12 h-12 rounded-lg bg-blue-700 flex items-center justify-center mb-4 mx-auto">
                   <benefit.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="font-display font-bold text-lg mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm">{benefit.description}</p>
+                <h3 className="font-display font-bold text-lg mb-2">
+                  {benefit.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  {benefit.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -136,35 +147,42 @@ const TrabalheConosco = () => {
                 Como se Candidatar
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Estamos sempre em busca de pessoas talentosas e apaixonadas por jogos. 
-                Se você quer fazer parte do nosso time, preencha o formulário ao lado 
-                com suas informações e uma breve mensagem sobre você.
+                Estamos sempre em busca de pessoas talentosas e apaixonadas por
+                jogos. Se você quer fazer parte do nosso time, preencha o
+                formulário ao lado com suas informações e uma breve mensagem
+                sobre você.
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
                   <p className="text-muted-foreground">
-                    Envie seu currículo e portfólio (se aplicável) anexando links na mensagem.
+                    Envie seu currículo e portfólio (se aplicável) anexando
+                    links na mensagem.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
                   <p className="text-muted-foreground">
-                    Conte sobre sua experiência com jogos e o que te motiva a trabalhar conosco.
+                    Conte sobre sua experiência com jogos e o que te motiva a
+                    trabalhar conosco.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
                   <p className="text-muted-foreground">
-                    Nossa equipe de RH analisará sua candidatura e entrará em contato.
+                    Nossa equipe de RH analisará sua candidatura e entrará em
+                    contato.
                   </p>
                 </div>
               </div>
 
               <p className="text-muted-foreground mt-6 text-sm">
                 Você também pode enviar seu currículo diretamente para:{" "}
-                <a href="mailto:carreiras@feugames.com" className="text-blue-600 hover:underline">
+                <a
+                  href="mailto:carreiras@feugames.com"
+                  className="text-blue-600 hover:underline"
+                >
                   carreiras@feugames.com
                 </a>
               </p>
@@ -178,7 +196,9 @@ const TrabalheConosco = () => {
               viewport={{ once: true }}
               className="p-8 rounded-2xl bg-surface border border-border"
             >
-              <h3 className="font-display text-xl font-bold mb-6">Envie sua candidatura</h3>
+              <h3 className="font-display text-xl font-bold mb-6">
+                Envie sua candidatura
+              </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Nome completo</Label>
@@ -243,7 +263,6 @@ const TrabalheConosco = () => {
           </div>
         </div>
       </section>
-
     </div>
   );
 };

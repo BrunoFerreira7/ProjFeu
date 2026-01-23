@@ -1,5 +1,17 @@
 import { motion } from "framer-motion";
-import { Target, Eye, Heart, Users, Award, Zap, Linkedin, Github, Instagram, Twitter, Globe } from "lucide-react";
+import {
+  Target,
+  Eye,
+  Heart,
+  Users,
+  Award,
+  Zap,
+  Linkedin,
+  Github,
+  Instagram,
+  Twitter,
+  Globe,
+} from "lucide-react";
 import bannerBg from "../assets/about-bkg.png"; //banner image file
 import { BannerPage } from "../components/BannerPage";
 import { BannerDecor } from "../components/BannerDecor";
@@ -13,32 +25,35 @@ const values = [
   {
     icon: Heart,
     title: "Paixão por Jogos",
-    description: "Amamos o que fazemos e isso se reflete em cada pixel dos nossos jogos.",
+    description:
+      "Amamos o que fazemos e isso se reflete em cada pixel dos nossos jogos.",
   },
   {
     icon: Users,
     title: "Jogadores em Primeiro Lugar",
-    description: "Nossa comunidade é a razão da nossa existência. Ouvimos e entregamos.",
+    description:
+      "Nossa comunidade é a razão da nossa existência. Ouvimos e entregamos.",
   },
   {
     icon: Zap,
     title: "Inovação Constante",
-    description: "Buscamos sempre novas tecnologias e mecânicas para surpreender.",
+    description:
+      "Buscamos sempre novas tecnologias e mecânicas para surpreender.",
   },
   {
     icon: Award,
     title: "Excelência",
-    description: "Não lançamos um jogo até que ele atinja nossos padrões de qualidade.",
+    description:
+      "Não lançamos um jogo até que ele atinja nossos padrões de qualidade.",
   },
 ];
 
 const SobreNos = () => {
   return (
     <div className="min-h-screen bg-background">
-      
       {/* Background Strip -> usa StripDecor.tsx component */}
-      <BannerPage title="Sobre Nós" backgroundImg={bannerBg}/>
-      
+      <BannerPage title="Sobre Nós" backgroundImg={bannerBg} />
+
       {/* Intro Text Section */}
       <section className="pt-32 pb-16 px-4">
         <div className="container mx-auto">
@@ -52,10 +67,14 @@ const SobreNos = () => {
               Mais que jogos. Experiências
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-              O <span className="font-semibold bg-gradient-to-r from-blue-300 via-blue-500 to-blue-800 bg-clip-text text-transparent">FEU GAMES STUDIO</span> é
-               movido pela paixão por jogos e pelo desejo de transformar ideias em
-              experiências jogáveis no Brasil. Desenvolvemos projetos com criatividade, dedicação e um 
-              olhar constante para evolução e qualidade.
+              O{" "}
+              <span className="font-semibold bg-gradient-to-r from-blue-300 via-blue-500 to-blue-800 bg-clip-text text-transparent">
+                FEU GAMES STUDIO
+              </span>{" "}
+              é movido pela paixão por jogos e pelo desejo de transformar ideias
+              em experiências jogáveis no Brasil. Desenvolvemos projetos com
+              criatividade, dedicação e um olhar constante para evolução e
+              qualidade.
             </p>
           </motion.div>
         </div>
@@ -65,7 +84,6 @@ const SobreNos = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-
             {/* Mission */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -77,11 +95,14 @@ const SobreNos = () => {
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-300 via-blue-500 to-blue-600 flex items-center justify-center mb-6">
                 <Target className="w-7 h-7 text-background" />
               </div>
-              <h2 className="font-display text-2xl font-bold mb-4">Nossa Missão</h2>
+              <h2 className="font-display text-2xl font-bold mb-4">
+                Nossa Missão
+              </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Criar jogos que transcendam o entretenimento, proporcionando experiências 
-                memoráveis que conectem pessoas ao redor do mundo. Buscamos inovar 
-                constantemente para entregar produtos que superem as expectativas dos jogadores.
+                Criar jogos que transcendam o entretenimento, proporcionando
+                experiências memoráveis que conectem pessoas ao redor do mundo.
+                Buscamos inovar constantemente para entregar produtos que
+                superem as expectativas dos jogadores.
               </p>
             </motion.div>
 
@@ -96,11 +117,14 @@ const SobreNos = () => {
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-300 via-blue-500 to-blue-600 flex items-center justify-center mb-6">
                 <Eye className="w-7 h-7 text-background" />
               </div>
-              <h2 className="font-display text-2xl font-bold mb-4">Nossa Visão</h2>
+              <h2 className="font-display text-2xl font-bold mb-4">
+                Nossa Visão
+              </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Ser reconhecida como um estúdio criativo de referência no desenvolvimento de jogos,
-                valorizando a inovação, a identidade e a experiência do jogador,
-                e estabelecendo novos padrões de qualidade na indústria.
+                Ser reconhecida como um estúdio criativo de referência no
+                desenvolvimento de jogos, valorizando a inovação, a identidade e
+                a experiência do jogador, e estabelecendo novos padrões de
+                qualidade na indústria.
               </p>
             </motion.div>
           </div>
@@ -120,7 +144,8 @@ const SobreNos = () => {
               Nossos Valores como Empresa
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Os princípios que guiam cada decisão e cada linha de código que escrevemos.
+              Os princípios que guiam cada decisão e cada linha de código que
+              escrevemos.
             </p>
           </motion.div>
 
@@ -137,8 +162,12 @@ const SobreNos = () => {
                 <div className="w-12 h-12 rounded-lg bg-blue-700 flex items-center justify-center mb-4">
                   <value.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="font-display font-bold text-lg mb-2">{value.title}</h3>
-                <p className="text-muted-foreground text-sm">{value.description}</p>
+                <h3 className="font-display font-bold text-lg mb-2">
+                  {value.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  {value.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -146,7 +175,7 @@ const SobreNos = () => {
       </section>
 
       {/* Decorative */}
-      <BannerDecor decorImg={bannerDc}/>
+      <BannerDecor decorImg={bannerDc} />
 
       {/* Team Section */}
       <section className="py-16 px-4">
@@ -165,10 +194,11 @@ const SobreNos = () => {
               Conheça a Equipe FEU
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Conheça as pessoas talentosas que transformam ideias em experiências inesquecíveis!
+              Conheça as pessoas talentosas que transformam ideias em
+              experiências inesquecíveis!
             </p>
           </motion.div>
-          
+
           {/* Repeater */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -187,7 +217,8 @@ const SobreNos = () => {
                 role: "Desenvolvedor Web & Estudante de Matemática (UERJ)",
                 bio: "Cria soluções limpas e centradas no usuário, com foco em resolver problemas reais com qualidade e criatividade.",
                 photo: brunoPhoto,
-                linkedin: "https://www.linkedin.com/in/bruno-ferreira-031874262/",
+                linkedin:
+                  "https://www.linkedin.com/in/bruno-ferreira-031874262/",
                 github: "https://github.com/BrunoFerreira7",
                 website: "https://brunoferreira7.github.io/Portifolio_2025/",
               },
@@ -198,7 +229,7 @@ const SobreNos = () => {
                 photo: mairaPhoto,
                 linkedin: "https://www.linkedin.com/in/mairamorenoc/",
                 github: "https://github.com/mairamorenoc",
-                website:"#",
+                website: "#",
               },
               {
                 name: "Mariana Lomardo",
@@ -225,9 +256,15 @@ const SobreNos = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="font-display font-bold text-blue-700 text-lg mb-1">{member.name}</h3>
-                <p className="text-white text-sm font-medium mb-3">{member.role}</p>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{member.bio}</p>
+                <h3 className="font-display font-bold text-blue-700 text-lg mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-white text-sm font-medium mb-3">
+                  {member.role}
+                </p>
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                  {member.bio}
+                </p>
                 <div className="flex justify-center gap-3">
                   {member.linkedin && (
                     <a
@@ -285,7 +322,6 @@ const SobreNos = () => {
           </div>
         </div>
       </section>
-
     </div>
   );
 };
