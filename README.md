@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# 🌐 Site Corporativo — Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o **front-end do site corporativo** desenvolvido para uma empresa, criado colaborativamente por um grupo de desenvolvedores.  
+O projeto foi pensado para entregar uma experiência **moderna, performática e responsiva**, seguindo boas práticas de desenvolvimento e organização de código.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Visão Geral do Projeto
 
-## React Compiler
+O site tem como objetivo apresentar a empresa de forma clara e profissional, fortalecendo sua presença digital por meio de uma interface moderna, acessível e adaptável a diferentes dispositivos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Principais características:
 
-## Expanding the ESLint configuration
+- Layout moderno e responsivo  
+- Código escalável e organizado  
+- Foco em usabilidade e performance  
+- Desenvolvimento colaborativo  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Tecnologias e Ferramentas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+O projeto utiliza um conjunto de tecnologias modernas do ecossistema front-end:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React** — Construção de interfaces componentizadas
+- **TypeScript** — Tipagem estática para maior segurança e manutenção do código
+- **Tailwind CSS** — Estilização utilitária, consistente e altamente customizável
+- **Vite** — Ambiente de desenvolvimento rápido e otimizado
+- **Git & GitHub** — Versionamento e colaboração em equipe
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Organização do Projeto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+A estrutura foi pensada para facilitar a escalabilidade e a reutilização de código:
+
+```bash
+src/
+├── assets/         # Imagens, ícones e arquivos estáticos
+├── components/     # Componentes reutilizáveis
+├── hooks/          # Funções especiais reutilizáveis
+├── lib/            # Função utilitária para criar classes CSS dinamicamente
+├── pages/          # Páginas internas do site
+├── App.tsx         # Componente raiz
+├── index.css       # Arquivo fonte CSS
+└── main.tsx        # Ponto de entrada da aplicação
+
+
+Gerenciador de pacotes (npm ou yarn)
